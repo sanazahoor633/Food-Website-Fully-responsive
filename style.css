@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+html, body {
+    height: 100%;
+    width: 100%;
+
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 05);
+}
+header.sticky .logo {
+    color: #111;
+}
+header.sticky .navigation li a {
+    color: #111;
+}
+header .logo {
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    display: flex;
+    position: relative;
+    
+} 
+header .navigation li {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 30px;
+}
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1627042633145-b780d842ba45?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    
+}
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    text-align: center; 
+}
+
+.content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+.content p {
+    font-weight: 300;
+    color: #fff;
+    font-size: 1em;
+}
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff0157;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    align-items: center;
+    display: inline-block;
+    margin-top: 2em;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+.btn:hover {
+    letter-spacing: 6px;
+}
+section {
+    padding: 100px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.title-text {
+    font-size: 2em;
+    color: #111;
+    font-weight: 700;
+}
+.title-text span {
+    color: #ff0157;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.row .col50 .imgBx {
+position: relative;
+width: 100%;
+min-height: 300px;
+}
+.col50 p {
+    font-size: 1em;
+    font-weight: 300;
+}
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+   
+}
+.menu .content .box {
+    width: 350px;
+    margin: 20px;
+    box-shadow:  0 5px 35px rgba(0, 0, 0, 0.8);
+}
+.menu .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 15px solid #fff;
+}
+.menu .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.menu .content .box .text {
+    padding: 15px 0 5px;
+    padding-left: 20px;
+}
+.menu .content .box .text h3 {
+    font-weight: 300;
+    color: #111;
+}
+
+.expert {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.expert .content .box {
+    width: 300px;
+    margin: 15px;
+   
+}
+.expert .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expert .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.expert .content .box .text {
+    padding: 15px 0 5px;
+    padding-left: 10px;
+}
+.expert .content .box .text h3 {
+    font-weight: 400;
+    font-size: 22px;
+}
+.testimonials {
+    background: url(https://images.unsplash.com/photo-1677139599932-af17943d8218?q=80&w=1517&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.white .title-text, 
+.white p {
+    color: #fff;
+}
+.testimonials .content {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+margin-top: 40px;
+}
+
+.testimonials .content .box {
+    width: 340px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials .content .box .imgBx {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials .content .text {
+    text-align: center;
+}
+.testimonials .content .text p {
+    color: #444;
+    font-size: initial;
+   line-height: 25px;
+   margin-bottom: 20px;
+   font-style: italic;
+   font-size: 1em;
+}
+.testimonials .content .text h3 {
+    font-size: 1.6em;
+    font-weight: 900;
+    color: #ff0157;
+}
+
+.testimonials .content .box .imgBx img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+.contact {
+    background: url(https://images.unsplash.com/photo-1730426373073-97e7b92c71c4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.contact .title h2 {
+    color: #fff;
+}
+.contact .title p {
+    color: #fff;
+}
+.contact-form {
+    padding: 75px 50px;
+    background-color: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contact-form h3 {
+   color: #111;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+   width: 100%;
+   border: 1px solid #555;
+   padding: 20px;
+   color: #111;
+   outline: none;
+   font-size: 20px;
+   font-weight: 700;
+   resize: none;
+}
+.contact-form .input-box input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff0157;
+    display: inline-block;
+    border: none;
+    max-width: 150px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.copyright-text {
+    padding: 40px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.copyright-text p {
+    color: #333;
+    font-size: 1em;
+}
+
+.copyright-text a {
+    color: #ff0157;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        color: #111;
+        font-size: 2em;
+    }
+    header .navigation.active {
+width: 100%;
+height: calc(100% - 70px);
+position: fixed;
+top: 70px;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: #fff;
+    }
+    .menu-toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(https://w7.pngwing.com/pngs/451/380/png-transparent-hamburger-button-computer-icons-menu-menu-rectangle-desktop-wallpaper-button-thumbnail.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .menu-toggle.active {
+        background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png);
+        background-size: 25px;
+        background-position: center;
+        background-color: #999;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+
+    }
+    header.sticky .menu-toggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+       font-size: 3em;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        margin-top: 20px;
+        height: 300px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+
+    .menu .content .box .imgBx {
+height: 260px;
+    }
+   .title-text {
+line-height: 1.5em;
+margin-bottom: 15px;
+font-weight: 300;
+   }
+   .testimonials .content .box {
+    margin: 10px;
+    padding: 20px;
+   }
+   .contact-form{
+    margin: 30px;
+    padding: 40px;
+   }
+}
+
+@media (max-width: 480px){
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
+
+
+
+
+
